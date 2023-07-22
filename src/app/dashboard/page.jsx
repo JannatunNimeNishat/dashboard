@@ -27,15 +27,15 @@ import flagTurkey from '../../../public/dashboard/content/FlagTurkie.png'
 const dashboardPage = () => {
 
     const [display, setDisplay] = useState(true)
-    console.log(display);
+  
     return (
         <div>
-            <div className='h-[50px]  flex items-center'>
+            {/* <div className='h-[50px]  flex items-center'> */}
                 <NavBar></NavBar>
-            </div>
+            {/* </div> */}
             <div className='grid grid-cols-1 lg:grid-cols-7'>
 
-                <div className=' lg:col-span-1  bg-[#262626] flex flex-col justify-center items-center sticky '>
+                <div className=' lg:col-span-1 bg-[#262626] flex flex-col  items-center sticky '>
                     {/* new Item */}
                     <br />
                     <button className=' px-5 py-2 bg-white text-black flex gap-1 rounded-md items-center justify-center'>

@@ -9,27 +9,27 @@ import Image from 'next/image';
 import Link from 'next/link';
 const NavBar = () => {
 
-    const navLinks = <div className='flex gap-1 lg:gap-3 w-full  justify-between'>
+    const navLinks = <div className='flex gap-3  w-full  justify-between'>
         <li className=''>
-            <Link href={'/'} className='flex items-center lg:gap-2  pr-2 w-[200px] p-4'>
+            <Link href={'/'} className='flex items-center gap-1  pr-2 w-[200px] p-4'>
                 <Image src={home} alt='home'></Image>
                 <p>Home</p>
             </Link>
         </li>
         <li>
-            <Link href={'/'} className='flex items-center lg:gap-2 ml-3'>
+            <Link href={'/'} className='flex items-center gap-1 ml-3'>
                 <Image src={threeBar} alt='threeBar'></Image>
                 <p>Contact</p>
             </Link>
         </li>
         <li>
-            <Link href={'/'} className='flex items-center lg:gap-2 ml-3'>
+            <Link href={'/'} className='flex items-center gap-1 ml-3'>
                 <Image src={threeBarAngle} alt='threeBarAngle'></Image>
                 <p>Category</p>
             </Link>
         </li>
         <li>
-            <Link href={'/'} className='flex items-center lg:gap-2 ml-3'>
+            <Link href={'/'} className='flex items-center gap-1 ml-3'>
                 <Image src={setting} alt='setting'></Image>
                 <p>Setting</p>
             </Link>
