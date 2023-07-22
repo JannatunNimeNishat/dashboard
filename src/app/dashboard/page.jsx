@@ -33,9 +33,9 @@ const dashboardPage = () => {
             <div className='h-[50px]  flex items-center'>
                 <NavBar></NavBar>
             </div>
-            <div className='grid grid-cols-7'>
+            <div className='grid grid-cols-1 lg:grid-cols-7'>
 
-                <div className='col-span-1  bg-[#262626] flex flex-col justify-center items-center  '>
+                <div className=' lg:col-span-1  bg-[#262626] flex flex-col justify-center items-center sticky '>
                     {/* new Item */}
                     <br />
                     <button className=' px-5 py-2 bg-white text-black flex gap-1 rounded-md items-center justify-center'>
@@ -141,12 +141,12 @@ const dashboardPage = () => {
                 </div>
 
                 {/* 2nd parent */}
-                <div className='col-span-6 bg-white text-black'>
+                <div className='lg:col-span-6 bg-white text-black pt-3 lg:pt-0'>
 
                     {/* add new post */}
-                    <div className='px-3 py-2 flex items-center justify-between w-full'>
-                        <div className='flex gap-4 '>
-                            <p className='text-xl font-bold'>Add new post</p>
+                    <div className='px-3 py-2 lg:flex items-center justify-between w-full'>
+                        <div className='lg:flex gap-4 '>
+                            <p className='text-xl font-bold '>Add new post</p>
                             <div className='flex gap-1 items-center'>
                                 <Image src={plus} alt='plus'></Image>
                                 <p>Add Content</p>
@@ -156,7 +156,7 @@ const dashboardPage = () => {
                                 <p>Add Content</p>
                             </div>
                         </div>
-                        <div className=' px-5 h-[44px] border rounded-md flex items-center justify-between'>
+                        <div className=' px-5 h-[44px] border rounded-md flex items-center justify-between mt-3 lg:mt-0'>
                             <input type="text" name="" id="" placeholder='Search content...' />
                             <Image src={search} alt='search'></Image>
                         </div>
@@ -414,7 +414,7 @@ const dashboardPage = () => {
                                 </div>
 
                                 {/* 2nd row */}
-                                <div className='pt-3 flex gap-3'>
+                                <div className='pt-3 lg:flex gap-3'>
                                     {/* inner 1st */}
                                     <div className="form-control w-full max-w-xs">
                                         <label className="label">
