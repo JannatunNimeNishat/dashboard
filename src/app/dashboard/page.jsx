@@ -24,7 +24,7 @@ import flagEngland from '../../../public/dashboard/content/FlagEngland.png'
 import flagTurkey from '../../../public/dashboard/content/FlagTurkie.png'
 
 
-const dashboardPage = () => {
+const DashboardPage = () => {
 
     const [display, setDisplay] = useState(true)
   
@@ -53,7 +53,16 @@ const dashboardPage = () => {
                             <Image src={dashboardIcon} alt='dashboardIcon'></Image>
                             <p>Dashboard</p>
                         </div>
-                        <Image src={up} alt='up'></Image>
+                        {
+                            display === true ?
+                            <>
+                            <Image src={up} alt='up'></Image>
+                            </>
+                            :
+                            <>
+                            <Image src={down} alt='down'></Image>
+                            </>
+                        }
                     </div>
                     <div className={`text-left space-y-2 pt-2 ${display === false ? 'hidden' : 'block'}`}
 
@@ -644,4 +653,4 @@ const dashboardPage = () => {
     );
 };
 
-export default dashboardPage;
+export default DashboardPage;
