@@ -16,10 +16,15 @@ import cart from '../../../public/dashboard/content/chart.png'
 import shop from '../../../public/dashboard/content/u_shop.png'
 import user from '../../../public/dashboard/content/u_users-alt.png'
 import threeBarAngle from '../../../public/dashboard/content/threeBarAngle.png'
-import info_circle from '../../../public/dashboard/content/info-circle.png' 
+import info_circle from '../../../public/dashboard/content/info-circle.png'
+import save from '../../../public/dashboard/content/u_save.png'
+import left_arrow from '../../../public/dashboard/content/left_arrow.png'
+import right_arrow from '../../../public/dashboard/content/right_arrow.png'
+
+
 const dashboardPage = () => {
 
-    const [display, setDisplay] = useState(false)
+    const [display, setDisplay] = useState(true)
     console.log(display);
     return (
         <div>
@@ -30,7 +35,7 @@ const dashboardPage = () => {
 
                 <div className='col-span-1 bg-[#262626] flex flex-col justify-center items-center  '>
                     {/* new Item */}
-                    <br />
+                   <br />
                     <button className=' px-5 py-2 bg-white text-black flex gap-1 rounded-md items-center justify-center'>
                         <Image src={plus} alt='plus' />
                         <p>New Item</p>
@@ -193,12 +198,189 @@ const dashboardPage = () => {
 
                             <h3 className='font-bold text-xl'>From title</h3>
                             <p>Sed tortor, sed velit ridiculus ipsum pharetra lacus odio gravida augue enim.</p>
-                            
+
                             <div className='border w-full py-4 border-red-400 bg-red-50 flex items-center gap-2 px-3 rounded-lg mt-5'>
                                 <Image src={info_circle} alt='info_circle'></Image>
                                 <p className='text-red-900 font-bold'>Senectus malesuada suspendisse bibendum elit amet vitae.</p>
                             </div>
 
+                            {/* table */}
+                            <>
+                                <div className="overflow-x-auto mt-8 rounded-lg border">
+                                    <table className="table table-zebra table-xs lg:table-lg">
+                                        {/* head */}
+                                        <thead>
+                                            <tr className='bg-[#D4D4D4]'>
+                                                <th>Table Title</th>
+                                                <th>Table Title</th>
+                                                <th>Table Title</th>
+                                                <th>Table Title</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {/* row 1 */}
+                                            <tr>
+                                                <td>Etiam purus in</td>
+                                                <td>Curabitur donec duis</td>
+                                                <td>Morbi pharetra, accumsan</td>
+                                                <td className='flex gap-3'>
+                                                    <button className='px-3 py-1 bg-blue-700 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Edit</p>
+                                                    </button>
+                                                    <button className='px-3 py-1 bg-amber-600 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Delete</p>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            {/* row 2 */}
+                                            <tr>
+
+                                                <td>Duis eget habitant</td>
+                                                <td>At amet odio</td>
+                                                <td>Commodo eget scelerisque</td>
+                                                <td className='flex gap-3'>
+                                                    <button className='px-3 py-1 bg-blue-700 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Edit</p>
+                                                    </button>
+                                                    <button className='px-3 py-1 bg-amber-600 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Delete</p>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            {/* row 3 */}
+                                            <tr>
+
+                                                <td>Aliquam velit lacus</td>
+                                                <td>Pellentesque egestas placerat</td>
+                                                <td>Tortor habitant sit</td>
+                                                <td className='flex gap-3'>
+                                                    <button className='px-3 py-1 bg-blue-700 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Edit</p>
+                                                    </button>
+                                                    <button className='px-3 py-1 bg-amber-600 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Delete</p>
+                                                    </button>
+                                                </td>
+
+                                            </tr>
+                                            {/* row 4 */}
+                                            <tr>
+                                                <td>Fermentum scelerisque ultricies</td>
+                                                <td>Morbi sagittis nulla</td>
+                                                <td>Quam semper quis</td>
+                                                <td className='flex gap-3'>
+                                                    <button className='px-3 py-1 bg-blue-700 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Edit</p>
+                                                    </button>
+                                                    <button className='px-3 py-1 bg-amber-600 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Delete</p>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            {/* row 5 */}
+                                            <tr>
+                                                <td>Integer semper pellentesque</td>
+                                                <td>Neque turpis enim</td>
+                                                <td>Egestas non sociis</td>
+                                                <td className='flex gap-3'>
+                                                    <button className='px-3 py-1 bg-blue-700 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Edit</p>
+                                                    </button>
+                                                    <button className='px-3 py-1 bg-amber-600 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Delete</p>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            {/* row 6 */}
+                                            <tr>
+                                                <td>Parturient at id</td>
+                                                <td>Sem neque, mattis</td>
+                                                <td>Pellentesque facilisis massa</td>
+                                                <td className='flex gap-3'>
+                                                    <button className='px-3 py-1 bg-blue-700 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Edit</p>
+                                                    </button>
+                                                    <button className='px-3 py-1 bg-amber-600 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Delete</p>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            {/* row 7 */}
+                                            <tr>
+                                                <td>Amet, pretium eget</td>
+                                                <td>In ipsum volutpat</td>
+                                                <td>Ut feugiat egestas</td>
+                                                <td className='flex gap-3'>
+                                                    <button className='px-3 py-1 bg-blue-700 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Edit</p>
+                                                    </button>
+                                                    <button className='px-3 py-1 bg-amber-600 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Delete</p>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            {/* row 8 */}
+                                            <tr>
+                                                <td>Risus consequat sollicitudin</td>
+                                                <td>Adipiscing odio nulla</td>
+                                                <td>Pharetra id sit</td>
+                                                <td className='flex gap-3'>
+                                                    <button className='px-3 py-1 bg-blue-700 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Edit</p>
+                                                    </button>
+                                                    <button className='px-3 py-1 bg-amber-600 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Delete</p>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            {/* row 9 */}
+                                            <tr>
+                                                <td>Risus consequat sollicitudin</td>
+                                                <td>Adipiscing odio nulla</td>
+                                                <td>Pharetra id sit</td>
+                                                <td className='flex gap-3'>
+                                                    <button className='px-3 py-1 bg-blue-700 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Edit</p>
+                                                    </button>
+                                                    <button className='px-3 py-1 bg-amber-600 flex items-center justify-center text-white rounded-md gap-1'>
+                                                        <Image src={save} alt='save'></Image>
+                                                        <p>Delete</p>
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div className='mt-5 flex gap-2 items-center justify-center'>
+                                    <Image src={left_arrow} alt='left arrow'></Image>
+                                    <p className='w-[35px] h-[35px] border rounded-md flex items-center justify-center'>1</p>
+                                    <p className='w-[35px] h-[35px] border rounded-md flex items-center justify-center bg-blue-600 text-white'>2</p>
+                                    <p className='w-[35px] h-[35px] border rounded-md flex items-center justify-center'>3</p>
+                                    <p className='w-[35px] h-[35px] border rounded-md flex items-center justify-center'>4</p>
+                                    <p className='w-[35px] h-[35px] border rounded-md flex items-center justify-center'>5</p>
+                                    <Image src={right_arrow} alt='left arrow'></Image>
+                                </div>
+                            </>
 
                         </div>
 
