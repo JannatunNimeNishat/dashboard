@@ -9,7 +9,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 const NavBar = () => {
 
-    const navLinks = <div className='flex w-full  justify-between'>
+    const navLinks = <div className='flex gap-3 w-full  justify-between'>
         <li className=''>
             <Link href={'/'} className='flex items-center gap-2  pr-2 w-[200px] p-4'>
                 <Image src={home} alt='home'></Image>
@@ -38,7 +38,7 @@ const NavBar = () => {
 
     return (
 
-        <div className='flex justify-between px-5 w-full '>
+        <div className='flex justify-between px-5 w-full py-5 items-center'>
             <div className='w-[500px]'>
                 <ul className='  w-full '>
                     {navLinks}
@@ -46,10 +46,12 @@ const NavBar = () => {
 
             </div>
            
-        <div className='h-[36px] bg-white text-black  py-2 flex items-center gap-2'>
+        <div className=' bg-white text-black  py-1 flex items-center gap-2 rounded-lg px-3'>
            <Image src={user} alt='user'></Image>
            <span className=''>İsmail İhsan Bülbül</span>
            </div>
+
+
         </div>
     );
 };

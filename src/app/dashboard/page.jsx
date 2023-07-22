@@ -20,6 +20,8 @@ import info_circle from '../../../public/dashboard/content/info-circle.png'
 import save from '../../../public/dashboard/content/u_save.png'
 import left_arrow from '../../../public/dashboard/content/left_arrow.png'
 import right_arrow from '../../../public/dashboard/content/right_arrow.png'
+import flagEngland from '../../../public/dashboard/content/FlagEngland.png'
+import flagTurkey from '../../../public/dashboard/content/FlagTurkie.png'
 
 
 const dashboardPage = () => {
@@ -33,9 +35,9 @@ const dashboardPage = () => {
             </div>
             <div className='grid grid-cols-7'>
 
-                <div className='col-span-1 bg-[#262626] flex flex-col justify-center items-center  '>
+                <div className='col-span-1  bg-[#262626] flex flex-col justify-center items-center  '>
                     {/* new Item */}
-                   <br />
+                    <br />
                     <button className=' px-5 py-2 bg-white text-black flex gap-1 rounded-md items-center justify-center'>
                         <Image src={plus} alt='plus' />
                         <p>New Item</p>
@@ -193,7 +195,7 @@ const dashboardPage = () => {
                             </div>
                         </div>
 
-                        {/* form */}
+                        {/* 1st form */}
                         <div className='bg-white rounded-lg mt-5 py-5 px-5'>
 
                             <h3 className='font-bold text-xl'>From title</h3>
@@ -384,6 +386,255 @@ const dashboardPage = () => {
 
                         </div>
 
+                        {/* 2nd form */}
+                        <div className='bg-white rounded-lg mt-5 py-5 px-5'>
+                            <h3 className='font-bold text-xl'>From title</h3>
+                            <p>Sed tortor, sed velit ridiculus ipsum pharetra lacus odio gravida augue enim.</p>
+                            <div className='mt-5 flex gap-2'>
+                                <button className='flex items-center bg-amber-200 border border-amber-600 w-[101px] h-[35px] gap-2 rounded-md px-2'>
+                                    <Image src={flagEngland} alt='flagEngland'></Image>
+                                    <p>English</p>
+                                </button>
+
+                                <button className='flex items-center border w-[101px] h-[35px] gap-2 rounded-md  px-2'>
+                                    <Image src={flagTurkey} alt='flagTurkey'></Image>
+                                    <p>Turkish</p>
+                                </button>
+                            </div>
+                            {/* inner form */}
+                            <div className='mt-3'>
+
+                                {/* 1st row */}
+                                <div className="form-control w-full max-w-full">
+                                    <label className="label">
+                                        <span className="label-text">Label Title</span>
+                                    </label>
+                                    <input type="text" placeholder="Placeholder content" className="input input-bordered w-full max-w-full" />
+
+                                </div>
+
+                                {/* 2nd row */}
+                                <div className='pt-3 flex gap-3'>
+                                    {/* inner 1st */}
+                                    <div className="form-control w-full max-w-xs">
+                                        <label className="label">
+                                            <span className="label-text">Label Title</span>
+
+                                        </label>
+                                        <select className="select select-bordered">
+                                            <option disabled selected>Chose</option>
+                                            <option>Star Wars</option>
+                                            <option>Harry Potter</option>
+                                            <option>Lord of the Rings</option>
+                                            <option>Planet of the Apes</option>
+                                            <option>Star Trek</option>
+                                        </select>
+
+                                    </div>
+                                    {/* inner 2 */}
+                                    <div className="form-control w-full max-w-full">
+                                        <label className="label">
+                                            <span className="label-text">Label Title</span>
+                                        </label>
+                                        <input type="text" placeholder="Placeholder content" className="input input-bordered w-full max-w-full" />
+
+                                    </div>
+                                    {/* inner 3 */}
+                                    <div className="form-control w-full max-w-full">
+                                        <label className="label">
+                                            <span className="label-text">Label Title</span>
+                                        </label>
+                                        <input type="text" placeholder="Placeholder content" className="input input-bordered w-full max-w-full" />
+
+                                    </div>
+
+                                </div>
+                                {/* 3rd row */}
+                                <div className='pt-3 flex gap-3'>
+
+                                    {/* inner 1 */}
+                                    <div className="form-control w-full max-w-full">
+                                        <label className="label">
+                                            <span className="label-text">Label Title</span>
+                                        </label>
+                                        <input type="text" placeholder="Placeholder content" className="input input-bordered w-full max-w-full" />
+
+                                    </div>
+                                    {/* inner 2 */}
+                                    <div className="form-control w-full max-w-full">
+                                        <label className="label">
+                                            <span className="label-text">Label Title</span>
+                                        </label>
+                                        <input type="text" placeholder="Placeholder content" className="input input-bordered w-full max-w-full" />
+
+                                    </div>
+
+                                </div>
+
+                                {/* 4th row */}
+                                <div className="pt-3">
+
+                                    <div className="form-control">
+                                        <label className="label">
+                                            <span className="label-text">Label Title</span>
+
+                                        </label>
+                                        <textarea className="textarea textarea-bordered h-[165px]" placeholder="Placeholder content"></textarea>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                        {/* 3rd form */}
+                        <div className='mt-5  grid grid-cols-1 lg:grid-cols-4 gap-3'>
+                            {/* left */}
+                            <div className='bg-white rounded-lg  py-5 px-5 col-span-3'>
+                                <div className=''>
+                                    <h3 className='font-bold text-xl'>From title</h3>
+                                    <p>Sed tortor, sed velit ridiculus ipsum pharetra lacus odio gravida augue enim.</p>
+
+                                    {/* inner form */}
+                                    <div className='mt-3'>
+
+                                        {/* 1st row */}
+                                        <div className="form-control w-full max-w-full">
+                                            <label className="label">
+                                                <span className="label-text">Label Title</span>
+                                            </label>
+                                            <input type="text" placeholder="Placeholder content" className="input input-bordered w-full max-w-full" />
+
+                                        </div>
+
+                                        {/* 2nd row */}
+                                        <div className='pt-3'>
+                                            {/* inner 1st */}
+                                            <div className="form-control w-full max-w-full">
+                                                <label className="label">
+                                                    <span className="label-text">Label Title</span>
+
+                                                </label>
+                                                <select className="select select-bordered">
+                                                    <option disabled selected>Chose</option>
+                                                    <option>Star Wars</option>
+                                                    <option>Harry Potter</option>
+                                                    <option>Lord of the Rings</option>
+                                                    <option>Planet of the Apes</option>
+                                                    <option>Star Trek</option>
+                                                </select>
+
+                                            </div>
+
+
+                                        </div>
+                                        {/* 3rd row */}
+                                        <div className='pt-3 flex gap-3'>
+
+                                            {/* inner 1 */}
+                                            <div className="form-control w-full max-w-full">
+                                                <label className="label">
+                                                    <span className="label-text">Label Title</span>
+                                                </label>
+                                                <input type="text" placeholder="Placeholder content" className="input input-bordered w-full max-w-full" />
+
+                                            </div>
+                                            {/* inner 2 */}
+                                            <div className="form-control w-full max-w-full">
+                                                <label className="label">
+                                                    <span className="label-text">Label Title</span>
+                                                </label>
+                                                <input type="text" placeholder="Placeholder content" className="input input-bordered w-full max-w-full" />
+
+                                            </div>
+
+                                        </div>
+
+                                        {/* 4th row */}
+                                        <div className="pt-3">
+
+                                            <div className="form-control">
+                                                <label className="label">
+                                                    <span className="label-text">Label Title</span>
+
+                                                </label>
+                                                <textarea className="textarea textarea-bordered h-[165px]" placeholder="Placeholder content"></textarea>
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            {/* right */}
+                            <div className='bg-white rounded-lg  py-5 px-5 col-span-1'>
+                                <div className=''>
+                                    <h3 className='font-bold text-xl'>From title</h3>
+                                    <p>Sed tortor, sed velit ridiculus ipsum pharetra lacus odio gravida augue enim.</p>
+
+                                    {/* inner form */}
+                                    <div className='mt-3'>
+
+                                        {/* 1st row */}
+                                        <div className="form-control w-full max-w-full">
+                                            <label className="label">
+                                                <span className="label-text">Label Title</span>
+                                            </label>
+                                            <input type="text" placeholder="Placeholder content" className="input input-bordered w-full max-w-full" />
+
+                                        </div>
+
+                                        {/* 2nd row */}
+                                        <div className='pt-3'>
+                                            {/* inner 1st */}
+                                            <div className="form-control w-full max-w-full">
+                                                <label className="label">
+                                                    <span className="label-text">Label Title</span>
+
+                                                </label>
+                                                <select className="select select-bordered">
+                                                    <option disabled selected>Chose</option>
+                                                    <option>Star Wars</option>
+                                                    <option>Harry Potter</option>
+                                                    <option>Lord of the Rings</option>
+                                                    <option>Planet of the Apes</option>
+                                                    <option>Star Trek</option>
+                                                </select>
+
+                                            </div>
+
+
+                                        </div>
+                                       
+
+                                        {/* 3rd row */}
+                                        <div className="pt-3">
+
+                                            <div className="form-control">
+                                                <label className="label">
+                                                    <span className="label-text">Label Title</span>
+
+                                                </label>
+                                                <textarea className="textarea textarea-bordered h-[165px]" placeholder="Placeholder content"></textarea>
+
+                                            </div>
+                                        </div>
+
+                                        <button className='bg-blue-600 text-white rounded-md w-full text-center h-[44px] mt-3'>
+                                            <p>Button title</p>
+
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
 
                     </div>
 
